@@ -11,7 +11,7 @@ Tai pirma Objektinio Programavimo užduotis.
 
 ## Versijų istorija (changelog)
 
-### [v0.2](https://github.com/objprog/pasisveikinimas/releases/tag/v1.0) - (2019-02-09)
+### [v0.2](https://github.com/zygisau/pasisveikinimas_objektinis/releases/tag/v0.2) - (2019-02-09)
 
 **Pridėta**
 
@@ -22,7 +22,7 @@ Tai pirma Objektinio Programavimo užduotis.
 - Atnaujintas **README** failas
 - Pataisytas cpp failas
 
-### [v0.1](https://github.com/objprog/pasisveikinimas/releases/tag/v1.0) - (2019-02-06)
+### [v0.1](https://github.com/zygisau/pasisveikinimas_objektinis/releases/tag/v0.1) - (2019-02-06)
 
 **Pridėta**
 
