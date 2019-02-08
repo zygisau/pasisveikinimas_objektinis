@@ -1,6 +1,6 @@
 # Pasisveikinimas
 
-![version][version-badge]badge
+![version][version-badge]
 
 Tai pirma Objektinio Programavimo užduotis.
 
