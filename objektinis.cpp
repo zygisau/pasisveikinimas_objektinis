@@ -18,15 +18,8 @@ int main()
 }
 //
 void spausdinti(string vardas) {
-    string eilute1, eilute2, eilute3, eilute4, eilute5, sveikas;
-    int plotis;
-    if (vardas.back() == 's') {
-        sveikas = "Sveikas";
-        plotis =  12 + vardas.length();
-    } else {
-        sveikas = "Sveika";
-        plotis =  11 + vardas.length();
-    }
+    string eilute1, eilute2, eilute3, eilute4, eilute5;
+    int plotis =  12 + vardas.length();
     int ilgis = 3;
     for (int i=1; i<=plotis+2; i++) { // pirma *** eilute
         eilute1 = eilute1 + '*';
@@ -40,7 +33,7 @@ void spausdinti(string vardas) {
     eilute2 = eilute2 + '*';
     cout  << eilute2 << endl;
     //
-    eilute3 = eilute3 + "* " + sveikas + ", " + vardas + "! *";
+    eilute3 = eilute3 + "* Sveikas, " + vardas + "! *";
     cout  << eilute3 << endl;
     //
     eilute4 = eilute4 + '*'; // tuscia *** eilute
@@ -54,16 +47,4 @@ void spausdinti(string vardas) {
         eilute5 = eilute5 + '*';
     }
     cout  << eilute5 << endl;
-    // printf("\n");
-    // for (int i=1; i<=ilgis; i++) {
-    //     if(i==dydis+1) {
-    //         printf("%*cSveikas, %s!%*c\n", -(dydis+1), '*', vardas.c_str(), dydis+1, '*');
-    //     } else {
-    //         printf("%c%*c\n", '*', plotis+1, '*');
-    //     }
-    // }
-    // for (int i=1; i<=plotis+2; i++) { // paskutine *** eilute
-    //     printf("*");
-    // }
-    printf("\n");
 }
