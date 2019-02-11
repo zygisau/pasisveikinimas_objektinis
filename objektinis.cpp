@@ -54,16 +54,5 @@ void spausdinti(string vardas) {
         eilute5 = eilute5 + '*';
     }
     cout  << eilute5 << endl;
-    // printf("\n");
-    // for (int i=1; i<=ilgis; i++) {
-    //     if(i==dydis+1) {
-    //         printf("%*cSveikas, %s!%*c\n", -(dydis+1), '*', vardas.c_str(), dydis+1, '*');
-    //     } else {
-    //         printf("%c%*c\n", '*', plotis+1, '*');
-    //     }
-    // }
-    // for (int i=1; i<=plotis+2; i++) { // paskutine *** eilute
-    //     printf("*");
-    // }
-    printf("\n");
+   
 }
