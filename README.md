@@ -46,7 +46,7 @@ Koks Jūsų vardas: Emilija
 
 ## Versijų istorija (changelog)
 
-### [v1.3](https://github.com/zygisau/pasisveikinimas_objektinis/releases/tag/v1.3) - (2019-02-09)
+### [v1.0](https://github.com/zygisau/pasisveikinimas_objektinis/releases/tag/v1.0) - (2019-02-09)
 
 **Pridėta**
 
