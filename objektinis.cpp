@@ -4,47 +4,48 @@
 #include <stdio.h>
 using namespace std;
 //
-void spausdinti(string vardas);
+void spausdinti(int dydis, string vardas);
 //
 int main()
 {
     string vardas;
+    int dydis;
     //
     printf("Koks Jusu vardas: ");
     cin >> vardas;
-    spausdinti(vardas);
+    printf("Iveskite remelio dydi (nuo 1 iki 10): ");
+    cin >> dydis;
+    spausdinti(dydis, vardas);
     system("PAUSE");
     return 0;
 }
 //
-void spausdinti(string vardas) {
-    string eilute1, eilute2, eilute3, eilute4, eilute5;
-    int plotis =  12 + vardas.length();
-    int ilgis = 3;
+void spausdinti(int dydis, string vardas) {
+    int plotis;
+    if (vardas.back() == 's') {
+        plotis = dydis*2 + 10 + vardas.length();                
+    } else {
+        plotis = dydis*2 + 9 + vardas.length();
+    }
+    int ilgis = dydis*2 + 1;
     for (int i=1; i<=plotis+2; i++) { // pirma *** eilute
-        eilute1 = eilute1 + '*';
+        printf("*");
     }
-    cout  << eilute1 << endl;
-    //
-    eilute2 = eilute2 + '*'; // tuscia *** eilute
-    for (int i=1; i<=plotis; i++) { 
-        eilute2 = eilute2 + ' ';
+    printf("\n");
+    for (int i=1; i<=ilgis; i++) {
+
+        if(i==dydis+1) {
+            if (vardas.back() == 's') {
+                printf("%*cSveikas, %s!%*c\n", -(dydis+1), '*', vardas.c_str(), dydis+1, '*');
+            } else {
+                printf("%*cSveika, %s!%*c\n", -(dydis+1), '*', vardas.c_str(), dydis+1, '*');
+            }
+        } else {
+            printf("%c%*c\n", '*', plotis+1, '*');
+        }
     }
-    eilute2 = eilute2 + '*';
-    cout  << eilute2 << endl;
-    //
-    eilute3 = eilute3 + "* Sveikas, " + vardas + "! *";
-    cout  << eilute3 << endl;
-    //
-    eilute4 = eilute4 + '*'; // tuscia *** eilute
-    for (int i=1; i<=plotis; i++) { 
-        eilute4 = eilute4 + ' ';
-    }
-    eilute4 = eilute4 + '*';
-    cout  << eilute4 << endl;
-    //
     for (int i=1; i<=plotis+2; i++) { // paskutine *** eilute
-        eilute5 = eilute5 + '*';
+        printf("*");
     }
-    cout  << eilute5 << endl;
+    printf("\n");
 }
