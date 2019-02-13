@@ -1,5 +1,5 @@
 # Pasisveikinimas
-
+![version][version-badge]
 
 Tai pirma Objektinio Programavimo užduotis. Programai pateikus vardą ir norimą rėmelio dydį, sukuriamas rėmelis su asmeniniu pasisveikinimu.
 
